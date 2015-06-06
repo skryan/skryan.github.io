@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Tableau 8.0 JavaScript API On-Demand Tutorial Example</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="bootstrap.css" rel="stylesheet" media="screen">
+	<!--<link href="bootstrap.min.css" rel="stylesheet" media="screen">-->
+	<!--<link href="styles.css" rel="stylesheet" media="screen">-->
+	<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script>
+	<script type="text/javascript" src="tutorial.js"></script>
+</head>
+<body>
+
+	<div class='container'>	
+		<div class='row'>
+			<ul id='menu' class='nav nav-list span3'>
+				<!-- This is the menu where we will add all of our buttons. -->
+				<li class='nav-header'>AFL Stats</li> 
+				<li><a onClick="switchView('Home')">Home</a></li>
+
+				<li class="header">General Stats</li> 
+				<li><a onClick="switchView('Goals & Behinds_GS')">Goals &amp; Behinds</a></li> 
+				<li><a onClick="switchView('Average Goals & Behinds_GS')">Average Goals &amp; Behinds</a></li> 
+				<li><a onClick="switchView('Results from Quarters_GS')">Results from Quarters</a></li>
+				<li><a onClick="switchView('Attendances_GS')">Attendances</a></li>
+				<li><a onClick="switchView('Quarter Results Percentage Year_GS')">Quarter Results % Year</a></li>
+				<li><a onClick="switchView('4 Quarter Results Bar_GS')">4 Quarter Results Bar</a></li>
+				<li><a onClick="switchView('Winning Point Lead_GS')">Winning Point Lead</a></li>
+				
+
+				<li class="header">Team Stats</li> 
+				<li><a onClick="switchView('Win Margins_TS')">Win Margins</a></li> 
+				<li><a onClick="switchView('Result Code by Year')">Result Code by Year</a></li> 
+				<li><a onClick="switchView('Two Half Result Code by Year')">Two Half Result Code by Year</a></li> 
+				<li><a onClick="switchView('Average Win Margin')">Average Win Margin</a></li> 
+				<li><a onClick="switchView('Win Margin Group')">Win Margin Group</a></li>
+				<li><a onClick="switchView('Goals by Venue')">Goals by Venue</a></li>
+				<li><a onClick="switchView('Team Result')">Team Result</a></li>
+				<li><a onClick="switchView('Team Form')">Team Form</a></li>
+				<li><a onClick="switchView('Grand Final')">Grand Final</a></li>
+				<li><a onClick="switchView('Average Team Attendance')">Average Team Attendance</a></li> 
+				<li><a onClick="switchView('Team Goals per Quarter')">Team Goals per Quarter</a></li> 
+				<li><a onClick="switchView('Win Margin')">Win Margin</a></li>
+				<li><a onClick="switchView('Win After')">Win After</a></li>
+				<li><a onClick="switchView('Team Win Margin')">Team Win Margin</a></li>
+				<li><a onClick="switchView('4 Quarters Teams')">4 Quarters Teams</a></li>
+				<li><a onClick="switchView('Team Two Half Result Code')">Team Two Half Result Code</a></li>
+				<li><a onClick="switchView('Team Points Q1')">Team Points Q1</a></li>
+				<li><a onClick="switchView('Team Goals in Q1')">Team Goals in Q1</a></li>
+				<li><a onClick="switchView('Team Goals in Q2')">Team Goals in Q2</a></li>
+				<li><a onClick="switchView('Team Goals in Q3')">Team Goals in Q3</a></li>
+				<li><a onClick="switchView('Team Goals in Q4')">Team Goals in Q4</a></li>
+				<li><a onClick="switchView('Team Goals in Q1 Against')">Team Goals in Q1 Against</a></li>
+				<li><a onClick="switchView('Team Goals in Q2 Against')">Team Goals in Q2 Against</a></li>
+				<li><a onClick="switchView('Team Goals in Q3 Against')">Team Goals in Q3 Against</a></li>
+				<li><a onClick="switchView('Team Goals in Q4 Against')">Team Goals in Q4 Against</a></li>
+				<li><a onClick="switchView('Q1 Points Lead Win')">Q1 Points Lead Win</a></li>
+				<li><a onClick="switchView('Q2 Points Lead Win')">Q2 Points Lead Win</a></li>
+				<li><a onClick="switchView('Q3 Points Lead Win')">Q3 Points Lead Win</a></li>
+				<li><a onClick="switchView('Q4 Points Lead Win')">Q4 Points Lead Win</a></li>
+				<li><a onClick="switchView('Win after Win')">Win after Win</a></li>
+				<li><a onClick="switchView('Team Stats')">Team Stats</a></li>
+
+				<li class="header">Other Pages</li> 
+				<li><a onClick="switchView('S_General Stats')">General Stats</a></li>
+
+				
+				<br>
+				<li><a onClick="switchView('Info')">Info</a></li> 
+			</ul>
+			<div class="span8" id='viz'></div>
+			<!-- This is the end of the section where we will do our work. -->
+		</div>
+	</div>
+</body>
+</html>
