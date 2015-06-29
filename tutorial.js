@@ -6,10 +6,10 @@ var viz, workbook;
 
 window.onload=function() {
 	var vizDiv = document.getElementById('viz');
-		var vizURL = "https://public.tableau.com/views/AFLAnalysisGitV1/WinAfterWin?:embed=y&:showTabs=y&:display_count=yes";
+		var vizURL = "https://public.tableau.com/views/AFLAnalysisGitV1/GoalsBehinds";
 		var options = {
-		width: '100%',
-		height: '100vh',
+		width: '150%',
+		height: '150vh',
 		hideToolbar: true,
 		hideTabs: true
 		}
