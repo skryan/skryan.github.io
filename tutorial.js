@@ -6,7 +6,7 @@ var viz, workbook;
 
 window.onload=function() {
 	var vizDiv = document.getElementById('viz');
-		var vizURL = "https://public.tableau.com/views/AFLAnalysisGitV1/Goals & Behinds";
+		var vizURL = "https://public.tableau.com/views/AFLAnalysisGitV1/Goals&Behinds";
 		var options = {
 		width: '150%',
 		height: '150vh',
